@@ -39,7 +39,7 @@ public class WidrawActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_widraw);
         initViews();
-        this.context = context;
+        this.context = this;
         this.requestQueue = Volley.newRequestQueue(this);
         progress = new ProgressDialog(context);
         progress.setTitle("Validating");
